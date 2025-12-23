@@ -1,0 +1,19 @@
+/* Add to your global CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse {
+  animation: pulse-gentle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Scanner window aspect ratio */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
